@@ -997,7 +997,7 @@ html.reveal-on [data-reveal-item]:nth-child(6) { transition-delay: 300ms; }
   .table-stack th,
   .table-stack td { display: block; width: auto; }
 
-  .table-stack caption { padding: 4px 4px 12px; }
+  .table-stack caption { display: block; width: 100%; padding: 4px 4px 12px; letter-spacing: 0.07em; }
 
   .table-stack tr {
     padding: 12px 14px 6px;
