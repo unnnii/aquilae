@@ -950,10 +950,8 @@ html.reveal-on [data-reveal-item]:nth-child(6) { transition-delay: 300ms; }
     gap: 2px;
     padding: 12px;
     border-radius: var(--r-lg);
-    background: color-mix(in srgb, var(--cream) 96%, transparent);
+    background: var(--cream);
     box-shadow: 0 24px 50px -26px rgba(63, 42, 214, 0.6), inset 0 0 0 1px rgba(95, 69, 242, 0.12);
-    -webkit-backdrop-filter: blur(18px);
-    backdrop-filter: blur(18px);
   }
   html.js .nav-links[data-open="true"] { display: flex; }
   html.js .nav-links a { min-height: 50px; padding: 0 18px; font-size: 1.02rem; border-radius: var(--r-sm); }
@@ -963,7 +961,7 @@ html.reveal-on [data-reveal-item]:nth-child(6) { transition-delay: 300ms; }
   .hero-foot { grid-template-columns: minmax(0, 1fr); gap: 26px; }
   .hero-top { align-items: center; }
   .hero-note { max-width: 26ch; font-size: 0.92rem; }
-  .sticker { right: 2%; top: 4%; }
+  .sticker { right: -10px; top: -12px; }
   .event-grid { grid-template-columns: minmax(0, 1fr); }
   .figure-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .bento { grid-template-columns: minmax(0, 1fr); }
@@ -977,6 +975,7 @@ html.reveal-on [data-reveal-item]:nth-child(6) { transition-delay: 300ms; }
 
 @media (max-width: 40rem) {
   .hero-script { font-size: clamp(4.6rem, 26vw, 9rem); }
+  .sticker { width: 82px; }
   .figure-cell { padding: 16px; }
   .figure { font-size: 2.4rem; }
   .statement { font-size: clamp(1.7rem, 7vw, 2.4rem); }
