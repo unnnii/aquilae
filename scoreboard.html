@@ -31,11 +31,11 @@
       <div class="notice"><p>Sample board. Replace these rows with live standings and add an update time.</p></div>
       <div class="board" data-reveal>
         <div class="table-wrap">
-          <table><caption>Sample standings</caption><thead><tr><th scope="col">Batch</th><th scope="col">Points</th><th scope="col">Events entered</th><th scope="col">Status</th></tr></thead><tbody>
-            <tr><th scope="row">Batch 01</th><td>TBD</td><td>TBD</td><td>Placeholder</td></tr>
-            <tr><th scope="row">Batch 02</th><td>TBD</td><td>TBD</td><td>Placeholder</td></tr>
-            <tr><th scope="row">Batch 03</th><td>TBD</td><td>TBD</td><td>Placeholder</td></tr>
-            <tr><th scope="row">Batch 04</th><td>TBD</td><td>TBD</td><td>Placeholder</td></tr>
+          <table class="table-stack"><caption>Sample standings</caption><thead><tr><th scope="col">Batch</th><th scope="col">Points</th><th scope="col">Events entered</th><th scope="col">Status</th></tr></thead><tbody>
+            <tr><th scope="row">Batch 01</th><td data-label="Points">TBD</td><td data-label="Events entered">TBD</td><td data-label="Status">Placeholder</td></tr>
+            <tr><th scope="row">Batch 02</th><td data-label="Points">TBD</td><td data-label="Events entered">TBD</td><td data-label="Status">Placeholder</td></tr>
+            <tr><th scope="row">Batch 03</th><td data-label="Points">TBD</td><td data-label="Events entered">TBD</td><td data-label="Status">Placeholder</td></tr>
+            <tr><th scope="row">Batch 04</th><td data-label="Points">TBD</td><td data-label="Events entered">TBD</td><td data-label="Status">Placeholder</td></tr>
           </tbody></table>
         </div>
       </div>
@@ -47,16 +47,16 @@
       <span class="eyebrow eyebrow--mint"><span class="ico">&#9638;</span> Points</span>
       <div class="section-head" data-reveal><h2>What a placing <span class="dim">earns</span></h2><p class="lead">Placings earn points for the batch. None means no points for that place.</p></div>
       <div class="table-wrap" data-reveal>
-        <table><caption>Points awarded per placing, by event</caption><thead><tr><th scope="col">Event</th><th scope="col">Type</th><th scope="col">1st</th><th scope="col">2nd</th><th scope="col">3rd and 4th</th></tr></thead><tbody>
-          <tr><th scope="row">Chess</th><td>Individual</td><td>50</td><td>30</td><td>20</td></tr>
-          <tr><th scope="row">Table Tennis</th><td>Individual</td><td>50</td><td>30</td><td>20</td></tr>
-          <tr><th scope="row">Arm Wrestling</th><td>Individual</td><td>20</td><td>10</td><td>5</td></tr>
-          <tr><th scope="row">Penalty Shootout</th><td>Individual</td><td>70</td><td>None</td><td>None</td></tr>
-          <tr><th scope="row">Throw In (Girls)</th><td>Individual</td><td>70</td><td>None</td><td>None</td></tr>
-          <tr><th scope="row">Carroms</th><td>Double</td><td>75</td><td>50</td><td>30</td></tr>
-          <tr><th scope="row">Badminton</th><td>Group</td><td>150</td><td>100</td><td>75</td></tr>
-          <tr><th scope="row">Football 7-a-side</th><td>Group</td><td>150</td><td>100</td><td>75</td></tr>
-          <tr><th scope="row">Basketball 3x3</th><td>Group</td><td>100</td><td>75</td><td>50</td></tr>
+        <table class="table-stack"><caption>Points awarded per placing, by event</caption><thead><tr><th scope="col">Event</th><th scope="col">Type</th><th scope="col">1st</th><th scope="col">2nd</th><th scope="col">3rd and 4th</th></tr></thead><tbody>
+          <tr><th scope="row">Chess</th><td data-label="Type">Individual</td><td data-label="1st">50</td><td data-label="2nd">30</td><td data-label="3rd and 4th">20</td></tr>
+          <tr><th scope="row">Table Tennis</th><td data-label="Type">Individual</td><td data-label="1st">50</td><td data-label="2nd">30</td><td data-label="3rd and 4th">20</td></tr>
+          <tr><th scope="row">Arm Wrestling</th><td data-label="Type">Individual</td><td data-label="1st">20</td><td data-label="2nd">10</td><td data-label="3rd and 4th">5</td></tr>
+          <tr><th scope="row">Penalty Shootout</th><td data-label="Type">Individual</td><td data-label="1st">70</td><td data-label="2nd">None</td><td data-label="3rd and 4th">None</td></tr>
+          <tr><th scope="row">Throw In (Girls)</th><td data-label="Type">Individual</td><td data-label="1st">70</td><td data-label="2nd">None</td><td data-label="3rd and 4th">None</td></tr>
+          <tr><th scope="row">Carroms</th><td data-label="Type">Double</td><td data-label="1st">75</td><td data-label="2nd">50</td><td data-label="3rd and 4th">30</td></tr>
+          <tr><th scope="row">Badminton</th><td data-label="Type">Group</td><td data-label="1st">150</td><td data-label="2nd">100</td><td data-label="3rd and 4th">75</td></tr>
+          <tr><th scope="row">Football 7-a-side</th><td data-label="Type">Group</td><td data-label="1st">150</td><td data-label="2nd">100</td><td data-label="3rd and 4th">75</td></tr>
+          <tr><th scope="row">Basketball 3x3</th><td data-label="Type">Group</td><td data-label="1st">100</td><td data-label="2nd">75</td><td data-label="3rd and 4th">50</td></tr>
         </tbody></table>
       </div>
       <div class="notice notice--gap" data-reveal-item><p>Penalty Shootout and Throw In also give 3 points for every participation. A team that does not report takes 15 negative points.</p></div>

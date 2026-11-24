@@ -988,6 +988,65 @@ html.reveal-on [data-reveal-item]:nth-child(6) { transition-delay: 300ms; }
   .footer-inner { align-items: flex-start; }
 }
 
+/* ---------- Stacked tables on narrow screens ---------- */
+@media (max-width: 44rem) {
+  .table-stack thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .table-stack,
+  .table-stack tbody,
+  .table-stack tr,
+  .table-stack th,
+  .table-stack td { display: block; width: auto; }
+
+  .table-stack caption { padding: 4px 4px 12px; }
+
+  .table-stack tr {
+    padding: 12px 14px 6px;
+    border-radius: var(--r-md);
+    background: color-mix(in srgb, var(--purple) 6%, transparent);
+  }
+  .table-stack tr + tr { margin-top: 10px; }
+  .table-stack tbody tr:hover { background: color-mix(in srgb, var(--purple) 10%, transparent); }
+
+  .table-stack th[scope="row"] {
+    padding: 0 0 9px;
+    border-bottom: 1px solid rgba(95, 69, 242, 0.18);
+    font-size: 0.98rem;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--purple-deep);
+    white-space: normal;
+  }
+  .table-stack td {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 9px 0;
+    border-bottom: 1px dashed rgba(95, 69, 242, 0.14);
+    font-size: 0.9rem;
+    text-align: right;
+  }
+  .table-stack tr td:last-child { border-bottom: 0; padding-bottom: 8px; }
+  .table-stack td::before {
+    content: attr(data-label);
+    flex: 0 0 auto;
+    font-family: var(--font-condensed);
+    font-stretch: 84%;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    text-align: left;
+  }
+
+  .board .table-stack tr { background: rgba(251, 239, 225, 0.09); }
+  .board .table-stack tbody tr:hover { background: rgba(251, 239, 225, 0.14); }
+  .board .table-stack th[scope="row"] { border-bottom: 1px solid rgba(251, 239, 225, 0.32); color: var(--cream); }
+  .board .table-stack td { border-bottom: 1px dashed rgba(251, 239, 225, 0.16); }
+  .board .table-stack td::before { color: rgba(251, 239, 225, 0.72); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
