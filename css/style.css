@@ -18,7 +18,8 @@
   --purple: #5f45f2;
   --purple-deep: #3f2ad6;
   --purple-ink: #2c1c8f;
-  --lilac: #c0b3ff;
+  --lilac: #8a6ef4;
+  --lilac-deep: #6f52e2;
   --ink: #5f45f2;
   --ink-soft: #6a58c9;
   --yellow: #ffe375;
@@ -851,7 +852,7 @@ tbody th { text-align: left; }
   font-stretch: 76%;
   font-size: 1.2rem;
   font-weight: 800;
-  color: var(--lilac);
+  color: var(--lilac-deep);
 }
 .participant .btn { min-height: 40px; padding: 0 16px; font-size: 0.8rem; }
 .form-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 22px; }
@@ -880,7 +881,7 @@ tbody th { text-align: left; }
   color: var(--yellow);
   transform: rotate(-4deg);
 }
-.footer-tag { margin: 10px 0 0; font-size: 0.95rem; color: rgba(251, 239, 225, 0.8); }
+.footer-tag { margin: 18px 0 0; font-size: 0.95rem; color: rgba(251, 239, 225, 0.88); }
 .footer-links { display: flex; flex-wrap: wrap; gap: 6px; }
 .footer-links a {
   padding: 8px 14px;
@@ -895,7 +896,7 @@ tbody th { text-align: left; }
 .footer-links a:hover { background: rgba(251, 239, 225, 0.22); }
 .footer-links a[aria-current="page"] { background: var(--yellow); color: var(--purple-deep); }
 .footer-legal { margin: 0; padding-top: 18px; border-top: 1px solid rgba(251, 239, 225, 0.22); }
-.footer-legal small { font-size: 0.8rem; color: rgba(251, 239, 225, 0.7); }
+.footer-legal small { font-size: 0.8rem; color: rgba(251, 239, 225, 0.85); }
 
 .field label:has(input[type="checkbox"]) { text-transform: none; letter-spacing: 0; font-family: var(--font-display); font-size: 0.95rem; font-weight: 500; }
 .notice--gap { margin-top: 22px; }
