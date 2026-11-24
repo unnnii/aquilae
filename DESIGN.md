@@ -15,7 +15,8 @@ Nothing from that site was copied: no code, no images, no fonts, no copy. The ty
 | Cream | `#fffbf3` | cards, nav pill, form fields |
 | Purple | `#5f45f2` | ink, primary buttons, footer, marquee |
 | Purple deep | `#3f2ad6` | small text on pastel |
-| Lilac | `#c0b3ff` | the dimmed second half of a heading |
+| Lilac | `#8a6ef4` | the dimmed second half of a heading |
+| Lilac deep | `#6f52e2` | small receding text, row numbers |
 | Yellow | `#ffe375` | primary pastel, highlights, tags |
 | Mint | `#96f1c6` | status pills, figures, one card |
 | Pink | `#ffadad` | section eyebrows, one card |
@@ -23,6 +24,8 @@ Nothing from that site was copied: no code, no images, no fonts, no copy. The ty
 | Sky | `#9decfa` | status pills, one card |
 
 Purple on cream measures 5.1:1. Small text on pastel uses `#3f2ad6`, which clears 4.5:1 on every pastel in the set. Highlight blocks behind a word always switch to the deep purple.
+
+The dimmed half of a heading is lilac at 3.3:1, which is the bar for large text. Anything small that needs to recede uses lilac deep at 4.6:1. A tint lighter than that fails even the large-text bar, so do not lighten it back for looks alone.
 
 ## Type
 
