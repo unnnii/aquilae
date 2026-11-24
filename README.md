@@ -8,27 +8,28 @@ Static website for **Aquilae**, an intra-college sport fest running **23 to 30 N
 | Repository | https://github.com/unnnii/aquilae |
 | Stack | plain HTML, CSS and JavaScript. No framework, no build step, no bundler |
 | Hosting | GitHub Pages, branch `main`, root `/` |
-| Design system | Hallmark v2.0.0, Arcade theme, dealt by hand |
-| Motion | Amber `amber-motion` from jsDelivr, loaded only in the browser |
+| Design | bright editorial poster. Cream paper, electric purple ink, pastel cards, oversized type |
+| Reference | the layout language of [viens-la.com](https://viens-la.com/), rebuilt with open fonts |
+| Motion | CSS transitions plus IntersectionObserver reveals in `js/site.js`. No third-party scripts |
 | Form | demo only. Nothing is sent or stored yet |
 
 ## What is here
 
 | File | Job |
 | --- | --- |
-| `index.html` | hero, opening card, featured competitions, schedule glance, scoreboard sample |
+| `index.html` | oversized wordmark hero, board preview, figures, schedule, scoreboard, register call |
 | `competitions.html` | all ten entry routes across nine sports |
 | `schedule.html` | day by day dates, times and venues |
 | `rules.html` | general instructions and rules by event |
 | `register.html` | demo registration form, batch and team modes |
 | `scoreboard.html` | points distribution and sample standings |
 | `404.html` | not-found page |
-| `css/style.css` | tokens and all styling, with the Hallmark stamp on line 1 |
+| `css/style.css` | tokens and all styling, with the design note on line 1 |
 | `js/config.js` | placeholder event and points data |
-| `js/site.js` | mobile nav, footer year and optional Amber motion |
+| `js/site.js` | bottom pill nav, footer year and optional scroll reveals |
 | `js/register.js` | form rows and preview panel |
 | `.nojekyll` | stops Pages running Jekyll |
-| `DESIGN.md` | Hallmark picks, Amber decision and what to replace |
+| `DESIGN.md` | palette, type, layout and what to replace |
 
 ## Placeholders to replace
 
@@ -44,12 +45,14 @@ Do not put a GitHub token, a service-role key or any other secret in this reposi
 
 ## Editing without a clone
 
-Every edit was sent straight to `unnnii/aquilae` with the GitHub REST Contents API. There is no local checkout and no push step. A fine-grained token needs **Contents: read and write** and **Metadata: read** for the target repository.
+Every edit was sent straight to `unnnii/aquilae` with the GitHub REST API. There is no local checkout and no push step. A fine-grained token needs **Contents: read and write** and **Metadata: read** for the target repository.
+
+When a CSS or JS file changes, bump the `?v=` query string in the HTML head so Pages and browsers pick it up instead of the cached copy.
 
 ## Testing
 
 1. Open the live site at 360px and at desktop width. Nothing should scroll sideways.
-2. Toggle the mobile menu and check every link.
+2. Check the floating pill nav at the bottom: open the menu on a phone, close it with Escape and with a click outside, and follow every link.
 3. Open the registration form, add a player, submit and confirm the preview says nothing was saved.
-4. Check that all reveal content stays visible with reduced motion enabled and with the CDN blocked.
+4. Turn reduced motion on. Reveals and the marquee should stop, and all content should still be visible.
 5. Check the live URL after a commit. Pages usually rebuild in about 30 seconds.
